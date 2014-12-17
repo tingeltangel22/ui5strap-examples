@@ -1,0 +1,17 @@
+<template data-controller-name="net__rozzo__ui5.mtest__app.controllers.Home">
+	
+	<div data-sap-ui-type="ui5strap.Heading" data-text="Press a button to change a theme!"></div>
+	<div data-sap-ui-type="ui5strap.Jumbotron">
+		<div data-sap-ui-type="ui5strap.Paragraph">
+								<div data-sap-ui-type="ui5strap.Button" id="defaultThemeButton" data-text="base" data-custom-data:theme="base" data-tap="switchTheme"></div>
+								<div data-sap-ui-type="ui5strap.Button" data-severity="Info" data-text="ui5strap_cyborg" data-custom-data:theme="ui5strap_cyborg" data-tap="switchTheme"></div>
+								<div data-sap-ui-type="ui5strap.Button" data-selected="true" data-severity="Success" data-text="sap_bluecrystal" data-custom-data:theme="sap_bluecrystal" data-tap="switchTheme"></div>
+							</div>
+	</div>
+	<div data-sap-ui-type="ui5strap.Row">
+		<div data-sap-ui-type="ui5strap.Col" data-columns-small="2">
+			<div data-sap-ui-type="sap.m.DatePicker"></div>
+		</div>
+	</div>
+	
+</template>

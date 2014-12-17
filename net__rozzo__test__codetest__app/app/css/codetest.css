@@ -1,0 +1,160 @@
+/*
+*
+*
+*
+* NavContainer
+*
+*/
+.navcontainer-my-target-content{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+.navcontainer-my-page-content > .sapUiView{
+	height:100%;
+
+	padding-left:120px;
+	padding-right:120px;
+	
+}
+
+.navcontainer-my-page > .sapUiView > .container-fluid{
+	overflow-x:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+	height:100%;
+}
+
+
+.navcontainer-my-target-buttonsLeft,
+.navcontainer-my-target-buttonsRight
+{
+	position:absolute;
+	top: 0;
+	bottom:0;
+	z-index:1000; 
+}
+
+.navcontainer-my-target-buttonsLeft{
+	left:0;
+	width:85px;
+}
+
+.navcontainer-my-target-buttonsRight{
+	right:0; 
+	width:85px;
+	
+}
+
+/*
+* NavContainer Button
+*/
+.navcontainer-my-button{
+ 	position:absolute;
+
+ 	display:block; 
+ 	
+ 	background-color:white;
+ 	border:solid 1px #e0e0e0;
+ 	
+ 	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	font-size:20px;
+}
+
+/*
+* NavContainer Left Button
+*/
+.navcontainer-my-target-buttonsLeft .navcontainer-my-button{
+	border-left:none;
+	
+	width:100%; 
+	height:92px;
+
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+
+	-webkit-transition: left 0.4s;
+         -moz-transition: left 0.4s;
+           -o-transition: left 0.4s;
+              transition: left 0.4s;
+}
+
+/*
+* NavContainer Right Button
+*/
+.navcontainer-my-target-buttonsRight .navcontainer-my-button{
+	border-right:none;
+	
+	width:100%; 
+	height:92px;
+	
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+	-webkit-transition: right 0.4s;
+         -moz-transition: right 0.4s;
+           -o-transition: right 0.4s;
+              transition: right 0.4s;
+}
+
+.navcontainer-my-target-buttonsLeft .navcontainer-my-button-1{
+	top:80px;
+}
+
+.navcontainer-my-target-buttonsLeft .navcontainer-my-button-2{
+	top:220px;
+}
+
+.navcontainer-my-target-buttonsLeft .navcontainer-my-button-3{
+	top:360px;
+}
+
+.navcontainer-my-target-buttonsRight .navcontainer-my-button-4{
+	top:120px;
+	height:120px;
+}
+
+.navcontainer-my-target-buttonsRight .navcontainer-my-button-5{
+	top:340px;
+	height:230px;
+	background-color:#f0f0ff;
+}
+
+/*
+* For Smaller devices
+*/
+@media (max-width: 767px) {
+	.navcontainer-my-page-content > .sapUiView{
+		padding-left:33px;
+		padding-right:33px;
+	}
+	
+	/*
+	* Buttons left
+	*/
+
+	.navcontainer-my-target-buttonsLeft{
+		width:36px; 
+	}
+	
+	/*
+	* Buttons right
+	*/
+	.navcontainer-my-target-buttonsRight{
+		width:36px; 
+	}
+}

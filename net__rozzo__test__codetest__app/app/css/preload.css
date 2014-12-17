@@ -1,0 +1,122 @@
+/*
+ * 
+ * UI5Strap
+ *
+ * Preload stylesheet for splash screen and layers
+ * 
+ * Author: Jan Philipp Knöller
+ * 
+ * Copyright (c) 2013 Jan Philipp Knöller
+ * 
+ * http://pksoftware.de
+ *
+ * Get the latest version: https://github.com/pks5/ui5strap
+ * 
+ * Released under Apache2 license: http://www.apache.org/licenses/LICENSE-2.0.txt
+ * 
+ */
+
+html, body{
+	width:100%;
+	height:100%;
+	
+	padding:0;
+	margin:0;
+
+	overflow:hidden;
+
+}
+
+#ui5strap-body{
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+#ui5strap-loader{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.9);
+	z-index:10000;
+}
+
+#ui5strap-loader > img{
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-8px;
+	margin-top:-8px;
+}
+
+#ui5strap-loader.ui5strap-loader-opaque{
+	background-color:black;
+}
+
+#ui5strap-splash{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index : 10001;
+
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+#ui5strap-splash-image{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-50px;
+	margin-top:-50px;
+}
+
+#ui5strap-splash-loader{
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-8px;
+	margin-top:96px;
+}
+
+#ui5strap-fatal{
+	z-index:10003;
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:20px;
+	color:white;
+	background-color: rgba(0,0,0,0.9);
+}
+
+#ui5strap-noscript{
+	z-index:10002;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:20px;
+	color:white;
+	background-color: rgba(0,0,0,0.9);
+}

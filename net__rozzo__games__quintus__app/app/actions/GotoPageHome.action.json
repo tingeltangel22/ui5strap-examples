@@ -1,0 +1,7 @@
+{
+	"a_modules" : "ui5strap.AMGotoPage",
+	"gotoPage" : {
+		"viewName" : "net__rozzo__games.quintus__app.views.Home",
+		"transition" : "transition-flip"
+	}
+}

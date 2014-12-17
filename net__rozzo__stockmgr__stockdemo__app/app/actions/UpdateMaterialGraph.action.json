@@ -1,0 +1,8 @@
+{
+	"a_modules" : "ui5strap.AMCallControlMethod",
+	"callControlMethod" : {
+		"controlId" : "material-graph",
+		"funcName" : "refresh",
+		"scope" : "VIEW"
+	}
+}

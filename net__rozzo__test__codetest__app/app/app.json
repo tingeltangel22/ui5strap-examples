@@ -1,0 +1,104 @@
+{
+        "app" : {
+            "name" : "codetest",
+            "package" : "net__rozzo__test.codetest__app",
+            "title" : "Code Test",
+            "id" : "net.rozzo.test.codetest.app",
+            "logLevel" : 5
+        },
+
+        "icons" : {
+            "default" : "img/my-app-icon-144x144.png"
+        },
+
+        "developers" : [
+            {
+                "name" : "Jan Philipp Knöller",
+                "email" : "info@pksoftware.de",
+                "timezone" : -1,
+                "roles" : [
+                    "Developer"
+                ]
+            }
+        ],
+
+        "licenses" : [
+            {
+                "name" : "Apache2 License",
+                "url" : "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        ],
+
+        "libraries" : [
+            {
+                "package" : "com__ui5strap__ui5utils",
+                "location" : "../../ui5utils"
+            }
+        ],
+
+        "css" : [
+            "css/codetest.css"
+        ],
+
+        "frames" : {
+            "default" : {
+                "module" : "ui5strap.AppFrame",
+                "navContainer" : "net__rozzo__test.codetest__app.modules.MyNavContainer",
+                "initialViews" : [
+                    { 
+                        "viewName" : "net__rozzo__test.codetest__app.views.Home"
+                    },
+                    { 
+                        "viewName" : "net__rozzo__test.codetest__app.views.ButtonsLeft"
+                    },
+                    { 
+                        "viewName" : "net__rozzo__test.codetest__app.views.ButtonsRight"
+                    }
+                ],
+                "navbarMenu" : "mainMenu"
+            }
+        },
+
+        "views" : {
+            "net__rozzo__test.codetest__app.views.Home" : {
+                "id" : "codetest-home",
+                "target" : "content",
+                "type" : "HTML",
+                "navbar" : false,
+                "sidebar" : true
+            },
+
+            "net__rozzo__test.codetest__app.views.Page2" : {
+                "id" : "codetest-page2",
+                "target" : "content",
+                "type" : "HTML",
+                "navbar" : false,
+                "sidebar" : true
+            },
+
+            "net__rozzo__test.codetest__app.views.Page3" : {
+                "id" : "codetest-page3",
+                "target" : "content",
+                "type" : "HTML",
+                "navbar" : false,
+                "sidebar" : true
+            },
+
+            "net__rozzo__test.codetest__app.views.ButtonsLeft" : {
+                "id" : "codetest-buttons-left",
+                "target" : "buttonsLeft",
+                "type" : "HTML",
+                "navbar" : false,
+                "sidebar" : true
+            },
+
+            "net__rozzo__test.codetest__app.views.ButtonsRight" : {
+                "id" : "codetest-buttons-right",
+                "target" : "buttonsRight",
+                "type" : "HTML",
+                "navbar" : false,
+                "sidebar" : true
+            }
+
+        }
+}

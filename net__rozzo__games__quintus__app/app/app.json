@@ -1,0 +1,133 @@
+{
+        "app" : {
+            "name" : "Quintus Game",
+            "package" : "net__rozzo__games.quintus__app",
+            "title" : "Quintus Demo",
+            "id" : "net.rozzo.games.quintus",
+            "logLevel" : 0
+        },
+
+        "icons" : {
+            "default" : "img/my-app-icon-144x144.png"
+        },
+
+        "developers" : [
+            {
+                "name" : "Jan Philipp Knöller",
+                "email" : "info@pksoftware.de",
+                "timezone" : -1,
+                "roles" : [
+                    "Developer"
+                ]
+            }
+        ],
+
+        "licenses" : [
+            {
+                "name" : "Apache2 License",
+                "url" : "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        ],
+
+        "css" : [
+            "css/my-app.css"
+        ],
+
+        "models" : [
+            {
+                "src" : "i18n/i18n.properties",
+                "type" : "RESOURCE",
+                "modelName" : "i18n" 
+            },
+            {
+                "src" : "data/data-example.json",
+                "type" : "JSON",
+                "modelName" : "data" 
+            }
+        ],
+
+        "frames" : {
+            "default" : {
+                "module" : "ui5strap.AppFrame",
+                "navContainer" : "ui5strap.NavContainer",
+                "initialViews" : [
+                    { 
+                        "viewName" : "net__rozzo__games.quintus__app.views.Intro"
+                    }
+                ]
+            }
+        },
+
+        "menus" : {
+            "homeMenu" : {
+                "parent" : "mainMenu",
+                "items" : [
+                        {
+                            "viewName" : "net__rozzo__games.quintus__app.views.Intro",
+                            "label" : "i18n>MENU_INTRO",
+                            "icon" : "home"
+                        },
+                        {
+                            "viewName" : "net__rozzo__games.quintus__app.views.Home",
+                            "label" : "i18n>MENU_HOME_HOME",
+                            "icon" : "home"
+                        },
+                        {
+                            "viewName" : "net__rozzo__games.quintus__app.views.Options",
+                            "label" : "i18n>MENU_OPTIONS",
+                            "icon" : "home"
+                        },
+                        {
+                            "viewName" : "net__rozzo__games.quintus__app.views.Support",
+                            "label" : "i18n>MENU_SUPPORT",
+                            "icon" : "support"
+                        }
+                ]
+            }
+        },
+
+        "views" : {
+            "net__rozzo__games.quintus__app.views.Intro" : {
+                "id" : "my-app-intro",
+                "styleClass" : "quintus-intro",
+                "target" : "content",
+                "type" : "HTML",
+                "sidebarMenu" : "homeMenu",
+                "navbar" : false,
+                "preload" : true,
+                "sidebar" : true,
+                "sidebar2bottom" : true
+            },
+            "net__rozzo__games.quintus__app.views.Home" : {
+                "id" : "my-app-home",
+                "target" : "content",
+                "type" : "HTML",
+                "sidebarMenu" : "homeMenu",
+                "navbar" : false,
+                "preload" : true,
+                "sidebar" : true,
+                "sidebar2bottom" : true
+            },
+            "net__rozzo__games.quintus__app.views.Options" : {
+                "id" : "my-app-options",
+                "styleClass" : "quintus-options",
+                "target" : "content",
+                "type" : "HTML",
+                "sidebarMenu" : "homeMenu",
+                "navbar" : false,
+                "preload" : true,
+                "sidebar" : true,
+                "sidebar2bottom" : true
+            },
+            "net__rozzo__games.quintus__app.views.Support" : {
+                "id" : "my-app-support",
+                "target" : "content",
+                "type" : "HTML",
+                "sidebarMenu" : "homeMenu",
+                "navbar" : false,
+                "preload" : true,
+                "sidebar" : true,
+                "sidebar2bottom" : true
+            }
+        }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- General -->
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		
+		<!-- IE settings -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<!-- IOS Webapp settings -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./app/img/my-app-icon-144x144.png">
+
+		<!-- Preload stylesheet -->
+		<link rel="stylesheet" type="text/css" href="./app/css/preload.css" />
+
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="./app/img/favicon-OpenUI5-trans.png" />
+
+		<!-- If you do not need IE8 support you can remove the following scripts -->
+		<!--[if lt IE 9]>
+      		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	
+	<body role="application">
+		
+		<!-- Root Container -->
+		<div id="ui5strap-body">
+			<!-- OpenUI5 will inject the generated html here -->
+		</div>
+
+		<!-- Ajax loader -->
+		<div id="ui5strap-loader">
+			<img src="./app/img/loader.gif" width="16" height="16" />
+		</div>
+
+		<!-- Splash screen -->
+		<div id="ui5strap-splash">
+			<img src="./app/img/splashscreen-image.png" id="ui5strap-splash-image" width="600" height="600" />
+			<img src="./app/img/splashscreen-loader.gif" id="ui5strap-splash-loader" width="32" height="32" />
+		</div>
+
+		<!-- Fatal error -->
+		<div id="ui5strap-fatal"></div>
+
+		<noscript>
+			<!-- No script -->
+			<div id="ui5strap-noscript">
+				Ui5Strap requires JavaScript to be enabled.
+			</div>
+		</noscript>
+		
+		<script id="sap-ui-bootstrap" src="../../ui5strap/resources/sap-ui-core.js" data-sap-ui-xx-test-mobile="true" data-sap-ui-xx-bindingSyntax="complex"></script>
+		
+		<!-- Ui5Strap library location -->
+		<script>
+			jQuery.sap.registerModulePath("ui5strap", "../../ui5strap/lib/ui5strap/");
+		</script>
+
+		<!-- Include complete, minified library at startup (optional) -->
+		<script id="ui5strap-bootstrap" src="../../ui5strap/lib/ui5strap/ui5strap-all.js"></script>
+
+		<script>
+		
+			/*
+			* Device Options
+			*/
+			var deviceOptions = {};
+
+			/*
+			* Initialize Device
+			*/
+			jQuery.sap.require("ui5strap.Device");
+			
+			var device = new ui5strap.Device(deviceOptions);
+			
+			device.ready();
+
+		</script>
+
+	</body>
+
+</html>

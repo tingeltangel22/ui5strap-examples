@@ -1,0 +1,9 @@
+{
+	"a_modules" : "ui5strap.AMGotoPage",
+	"gotoPage" : {
+		"viewName" : "net__rozzo__test.codetest__app.views.Page2",
+		"transition" : "transition-slide",
+		"writeHistory" : true,
+		"bookmarkable" : false
+	}
+}
