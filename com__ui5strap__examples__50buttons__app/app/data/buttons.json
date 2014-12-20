@@ -1,0 +1,74 @@
+{
+
+	"page1" : [
+		{
+			"icon" : "exclamation-circle",
+			"action" : "com__ui5strap__examples.50buttons__app.actions.Button1"
+		},
+		{
+			"icon" : "pencil"
+		},
+		{
+			"icon" : "remove"
+		},
+		{
+			"icon" : "rocket"
+		},
+		{
+			"icon" : "phone"
+		},
+		{
+			"icon" : "exclamation-circle",
+			"action" : "com__ui5strap__examples.50buttons__app.actions.Button1"
+		},
+		{
+			"icon" : "pencil"
+		},
+		{
+			"icon" : "remove"
+		},
+		{
+			"icon" : "rocket"
+		},
+		{
+			"icon" : "arrow-right"
+		}
+	],
+
+	"page2" : [
+		{
+			"icon" : "exclamation-circle",
+			"action" : "com__ui5strap__examples.50buttons__app.actions.Button1"
+		},
+		{
+			"icon" : "pencil"
+		},
+		{
+			"icon" : "remove"
+		},
+		{
+			"icon" : "rocket"
+		},
+		{
+			"icon" : "phone"
+		},
+		{
+			"icon" : "exclamation-circle",
+			"action" : "com__ui5strap__examples.50buttons__app.actions.Button1"
+		},
+		{
+			"icon" : "pencil"
+		},
+		{
+			"icon" : "remove"
+		},
+		{
+			"icon" : "rocket"
+		},
+		{
+			"icon" : "arrow-right"
+		}
+	]
+
+	
+}

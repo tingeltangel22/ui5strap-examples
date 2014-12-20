@@ -1,8 +1,8 @@
 sap.ui.controller("com__ui5strap__bs.basic__app.controllers.Controls", {
 
 	onAfterRendering : function(){
-		if(this.getView().getViewName() === "com_mycompany.my_app.views.Controls"){
-			this.getView().getViewData().app.setLoaderVisible(false);
+		if(this.getView().getViewName() === "tld__domain.product__app.views.Controls"){
+			this.getApp().setLoaderVisible(false);
 		}
 	},	
 

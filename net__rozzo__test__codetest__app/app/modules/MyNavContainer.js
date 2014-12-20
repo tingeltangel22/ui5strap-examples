@@ -25,7 +25,7 @@
 			properties : { 
 				options : {
 					type : "string",
-					defaultValue : ""
+					defaultValue : "opt1"
 				}
 			}
 

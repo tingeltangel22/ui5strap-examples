@@ -18,7 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="./app/css/preload.css" />
 
 		<!-- Fav Icon -->
-		<link rel="shortcut icon" href="./app/img/graph-favicon.png" />
+		<link rel="shortcut icon" href="./app/img/favicon-bs-Controls-trans.png" />
 
 		<!-- If you do not need IE8 support you can remove the following scripts -->
 		<!--[if lt IE 9]>
@@ -40,19 +40,18 @@
 		</div>
 
 		<!-- Splash screen -->
-		<div id="ui5strap-splash" style="visibility:hidden;">
-			<div class="stock-splash-window">
-				<div class="stock-splash-window-title">
-					<div class="stock-splash-window-title-heading">Stock MGT Demo</div>
-				</div>
-			</div>
+		<div id="ui5strap-splash">
+			<img src="./app/img/splashscreen-image.png" id="ui5strap-splash-image" width="600" height="600" />
+			<img src="./app/img/splashscreen-loader.gif" id="ui5strap-splash-loader" width="32" height="32" />
 		</div>
 
 		<!-- Fatal error -->
-		<div id="ui5strap-fatal"></div>
+		<div id="ui5strap-fatal">
+			<div id="ui5strap-fatal-message"></div>
+		</div>
 
+		<!-- No script -->
 		<noscript>
-			<!-- No script -->
 			<div id="ui5strap-noscript">
 				Ui5Strap requires JavaScript to be enabled.
 			</div>
@@ -66,14 +65,16 @@
 		</script>
 
 		<!-- Include complete, minified library at startup (optional) -->
-		<script id="ui5strap-bootstrap" src="../../ui5strap/lib/ui5strap/ui5strap-all-dbg.js"></script>
+		<script id="ui5strap-bootstrap" src="../../ui5strap/lib/ui5strap/ui5strap-all.js"></script>
 
 		<script>
 		
 			/*
 			* Device Options
 			*/
-			var deviceOptions = {};
+			var deviceOptions = {
+				"errorToBrowser" : true
+			};
 
 			/*
 			* Initialize Device

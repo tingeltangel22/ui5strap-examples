@@ -2,10 +2,10 @@
 	
 	"__format" : "AJ2.0",
 	"__modules" : "ui5strap.AMGotoPage",
-	"__description" : "Goto Page MaterialDetails",
-	
+	"__description" : "Goto Page 1",
+
 	"gotoPage" : {
-		"viewName" : "net__rozzo__stockmgr.stockdemo__app.views.MaterialDetails",
+		"viewName" : "tld__domain.product__app.views.Page1",
 		"transition" : "transition-flip",
 		"writeHistory" : true
 	}

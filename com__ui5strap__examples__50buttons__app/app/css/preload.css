@@ -1,0 +1,155 @@
+/*
+ * 
+ * Preload Stylesheet
+ *
+ * @author [Your Name]
+ * 
+ * Copyright (c) 2014 [Your Company]
+ * 
+ * [Website]
+ *
+ * [License information]
+ * 
+ */
+
+/*
+* HTML Skeleton
+*/
+html, body{
+	width:100%;
+	height:100%;
+	
+	padding:0;
+	margin:0;
+
+	overflow:hidden;
+}
+
+/*
+* Root Container
+*/
+#ui5strap-body{
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+/*
+* Loading Screen
+*/
+#ui5strap-loader{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.9);
+	z-index:10000;
+}
+
+/*
+* Loading Screen Spinner Image
+*/
+#ui5strap-loader > img{
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-8px;
+	margin-top:-8px;
+}
+
+/*
+* Loading Screen Option (Fully Opaque)
+*/
+#ui5strap-loader.ui5strap-loader-opaque{
+	background-color:black;
+}
+
+/*
+* Splash Screen
+*/
+#ui5strap-splash{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index : 10001;
+
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+/*
+* Splash Screen Image
+*/
+#ui5strap-splash-image{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-50px;
+	margin-top:-50px;
+}
+
+/*
+* Splash Screen Loader
+*/
+#ui5strap-splash-loader{
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-8px;
+	margin-top:96px;
+}
+
+/*
+* Fatal Error Screen
+* Shown when a fatal error occurs.
+*/
+#ui5strap-fatal{
+	z-index:10003;
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:20px;
+	color:white;
+	background-color: rgba(0,0,0,0.9);
+}
+
+/*
+* Fatal Error Screen Message
+*/
+#ui5strap-fatal-message{
+
+}
+
+/*
+* No Script Screen
+* Only visible when JavaScript is deactivated.
+*/
+#ui5strap-noscript{
+	z-index:10002;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:20px;
+	color:white;
+	background-color: rgba(0,0,0,0.9);
+}
